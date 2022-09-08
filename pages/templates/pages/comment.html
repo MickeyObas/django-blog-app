@@ -1,0 +1,15 @@
+<div class="container-fluid">
+<div class="row justify-content-center">
+    <div class="col-md-auto justify-content-center">
+       <form action="" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        {{field.errors}}
+        {{field}}
+        {% endfor %}  
+        
+        <button type="submit" class="btn btn-dark text-center text-white d-block">Post</button>
+    </form> 
+    </div>
+</div>
+</div>
